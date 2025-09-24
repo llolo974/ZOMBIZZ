@@ -38,9 +38,7 @@ footer {
   padding: 15px;
   font-size: 14px;
 }
-.animated-image {
-  width: 300px;
-  transition: transform 0.5s;
+
 }
 .animated-image {
   width: 20px; /* tu peux changer 200px à ce que tu veux */
@@ -50,6 +48,7 @@ footer {
 .animated-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
 
 
 
