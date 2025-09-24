@@ -38,3 +38,12 @@ footer {
   padding: 15px;
   font-size: 14px;
 }
+.animated-image {
+  width: 300px;
+  transition: transform 0.5s;
+}
+
+.animated-image:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
