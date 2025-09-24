@@ -1,3 +1,4 @@
+/* Style général */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,6 +8,7 @@ body {
   text-align: center;
 }
 
+/* Header */
 header {
   background: #2c3e50;
   color: white;
@@ -17,6 +19,7 @@ header h1 {
   margin: 0;
 }
 
+/* Menu de navigation */
 nav a {
   color: white;
   margin: 0 15px;
@@ -28,10 +31,12 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Sections */
 section {
   padding: 40px 20px;
 }
 
+/* Footer */
 footer {
   background: #222;
   color: #bbb;
@@ -39,20 +44,25 @@ footer {
   font-size: 14px;
 }
 
-}
+/* Animation pour l'image */
 .animated-image {
-  width: 20px; 
+  width: 150px;      /* taille adaptée */
+  max-width: 80%;    /* responsive sur petit écran */
+  height: auto;      /* garde les proportions */
   transition: transform 0.5s;
+  margin: 20px 0;
 }
 
 .animated-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 
+/* Animation pour les titres */
+h1, h2 {
+  animation: fadeIn 1s ease-in-out;
+}
 
-
-
-
-
-
-
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
